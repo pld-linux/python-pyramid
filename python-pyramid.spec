@@ -6,7 +6,7 @@
 Summary:	The Pyramid web application development framework, a Pylons project
 Name:		python-%{module}
 Version:	1.4
-Release:	1
+Release:	2
 License:	BSD-derived (http://www.repoze.org/LICENSE.txt)
 Group:		Libraries/Python
 Source0:	http://pypi.python.org/packages/source/p/pyramid/%{module}-%{version}.tar.gz
