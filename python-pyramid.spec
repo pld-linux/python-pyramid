@@ -14,7 +14,7 @@ Source0:	http://pypi.python.org/packages/source/p/pyramid/%{module}-%{version}.t
 URL:		http://www.pylonsproject.org/
 BuildRequires:	python-distribute
 BuildRequires:	rpm-pythonprov
-BuildRequires:	rpmbuild(macros) >= 1.219
+BuildRequires:	rpmbuild(macros) >= 1.710
 %if %{with tests}
 BuildRequires:	python-PasteDeploy >= 1.5.0
 %endif
