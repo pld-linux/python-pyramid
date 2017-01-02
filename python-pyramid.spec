@@ -2,11 +2,11 @@
 # Conditional build:
 %bcond_with	tests	# do not perform "make test"
 
-%define 	module	pyramid
+%define		module	pyramid
 Summary:	The Pyramid web application development framework, a Pylons project
 Name:		python-%{module}
 Version:	1.4
-Release:	2
+Release:	3
 License:	BSD-derived (http://www.repoze.org/LICENSE.txt)
 Group:		Libraries/Python
 Source0:	http://pypi.python.org/packages/source/p/pyramid/%{module}-%{version}.tar.gz
@@ -18,8 +18,6 @@ BuildRequires:	rpmbuild(macros) >= 1.710
 %if %{with tests}
 BuildRequires:	python-PasteDeploy >= 1.5.0
 %endif
-Requires:	Zope-Deprecation >= 3.5.0
-Requires:	Zope-Interface >= 3.8.0
 Requires:	python-Mako >= 0.3.6
 Requires:	python-PasteDeploy >= 1.5.0
 Requires:	python-WebOb >= 1.2
@@ -29,6 +27,8 @@ Requires:	python-modules
 Requires:	python-repoze.lru >= 0.4
 Requires:	python-translationstring >= 0.4
 Requires:	python-venusian >= 1.0
+Requires:	python-zope.deprecation >= 3.5.0
+Requires:	python-zope.interface >= 3.8.0
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
